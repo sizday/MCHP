@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">ListLessons</string>
+    <string name="my_name">DENIS</string>
+    <string name="red">RED</string>
+    <string name="orange">ORANGE</string>
+    <string name="yellow">YELLOW</string>
+    <string name="green">GREEN</string>
+    <string name="lite_blue">LITE-BLUE</string>
+    <string name="blue">BLUE</string>
+    <string name="purple">PURPLE</string>
+    <string name="setting">Setting</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="save">Save</string>
+    <string name="sCreate">onCreate() called</string>
+    <string name="sStart">onStart() called</string>
+    <string name="sResume">onResume() called</string>
+    <string name="sPause">onPause() called</string>
+    <string name="sStop">onStop() called</string>
+    <string name="sDestroy">onDestroy() called</string>
+    <string name="add">Add</string>
+    <string name="remove">Remove</string>
+    <string name="replace">Replace</string>
+    <string name="lesson_list">List of the lessons</string>
+    <string name="lesson1">Lesson1</string>
+    <string name="lesson2">Lesson2</string>
+    <string name="TODO">TODO</string>
+    <string name="FIO">Sizov Denis</string>
+    <string name="name">Name</string>
+</resources>
