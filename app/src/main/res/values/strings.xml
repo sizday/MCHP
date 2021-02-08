@@ -27,4 +27,11 @@
     <string name="TODO">TODO</string>
     <string name="FIO">Sizov Denis</string>
     <string name="name">Name</string>
+    <string name="todo">TODO</string>
+    <string name="search" />
+    <string name="content_description_search" />
+    <string name="more" />
+    <string name="content_description_more" />
+    <string name="text_label_1" />
+    <string name="text_label_2" />
 </resources>

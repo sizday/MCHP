@@ -5,10 +5,12 @@
         android:id="@+id/action_settings"
         android:title="@string/setting">
         <menu>
-            <item android:id="@+id/save_settings"
-                android:title="@string/save" />
-            <item android:id="@+id/open_settings"
+            <item
+                android:id="@+id/open_settings"
                 android:title="@string/open" />
+            <item
+                android:id="@+id/save_settings"
+                android:title="@string/save" />
         </menu>
 
     </item>

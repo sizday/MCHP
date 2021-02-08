@@ -11,8 +11,8 @@ import androidx.fragment.app.FragmentManager;
 
 public class FragmentDynamic extends AppCompatActivity {
 
-    FragmentCalendar frag1;
-    FragmentColors frag2;
+    Fragment frag1;
+    Fragment frag2;
     Fragment current;
 
 
