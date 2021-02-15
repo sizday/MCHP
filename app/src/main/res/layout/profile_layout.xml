@@ -15,15 +15,19 @@
         app:srcCompat="@drawable/profile"
         android:layout_margin="10dp" />
 
-    <EditText
-        android:id="@+id/editTextPersonName"
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/editLayout"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:ems="10"
-        android:inputType="textPersonName"
-        android:text="@string/name"
-        android:autofillHints=""
-        tools:ignore="LabelFor" />
+        android:layout_margin="7dp"
+        android:hint="@string/number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumber"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -33,35 +37,27 @@
         <ImageButton
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_margin="5dp"
             android:layout_gravity="center_horizontal"
             android:onClick="onClickTel"
             android:contentDescription="@string/TODO"
-            app:srcCompat="@android:drawable/sym_action_call"
-            app:backgroundTint="@color/lite_blue" />
+            app:srcCompat="@drawable/ic_phone_24dp"
+            tools:ignore="VectorDrawableCompat" />
 
         <ImageButton
             android:id="@+id/imageButton5"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_height="match_parent"
             android:layout_weight="1"
+            android:layout_margin="5dp"
             android:layout_gravity="center_horizontal"
             android:onClick="onClickVK"
             android:contentDescription="@string/TODO"
             app:srcCompat="@drawable/ic_vk_logo"
-            tools:ignore="VectorDrawableCompat"
-            app:backgroundTint="@color/lite_blue" />
+            tools:ignore="VectorDrawableCompat" />
 
     </LinearLayout>
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/lesson_list"
-        android:layout_margin="5dp"
-        android:onClick="onClick"
-        app:backgroundTint="@color/blue"/>
 
 </LinearLayout>

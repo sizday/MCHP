@@ -27,11 +27,13 @@
     <string name="TODO">TODO</string>
     <string name="FIO">Sizov Denis</string>
     <string name="name">Name</string>
+    <string name="number">Number</string>
     <string name="todo">TODO</string>
-    <string name="search" />
-    <string name="content_description_search" />
-    <string name="more" />
-    <string name="content_description_more" />
-    <string name="text_label_1" />
-    <string name="text_label_2" />
+    <string name="search">Search</string>
+    <string name="content_description_search">Content_search</string>
+    <string name="more">More</string>
+    <string name="content_description_more">Content_more</string>
+    <string name="navigation_menu_3">Item3</string>
+    <string name="navigation_menu_list_lesson">List Lessons</string>
+    <string name="navigation_menu_profile">Profile</string>
 </resources>

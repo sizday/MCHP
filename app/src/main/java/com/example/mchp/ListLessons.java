@@ -18,12 +18,14 @@ public class ListLessons extends AppCompatActivity {
     Boolean fragFlag3 = false;
 
     // создание активити с приемом данных из intent
+    @SuppressLint("SetTextI18n")
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.to_do_list);
+        setContentView(R.layout.list_lessons);
         String name = getIntent().getStringExtra("name");
+        Student kolyan = (Student) getIntent().getSerializableExtra("student");
         TextView textView = findViewById(R.id.helloTextView);
-        textView.setText(name);
+        textView.setText("Hello" + name);
         frag1 = new FragmentCalendar();
         frag2 = new FragmentColors();
     }

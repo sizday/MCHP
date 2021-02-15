@@ -4,12 +4,12 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
+import androidx.fragment.app.FragmentTransaction;
+
 import android.annotation.SuppressLint;
 import android.content.Intent;
-import android.icu.util.ICUUncheckedIOException;
 import android.net.Uri;
 import android.os.Bundle;
-import android.text.Editable;
 import android.text.TextUtils;
 import android.util.Log;
 import android.view.Menu;
@@ -17,23 +17,50 @@ import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
 public class MainActivity extends AppCompatActivity {
 
-
     final String LOG_TAG = "myLogs";
+    BottomNavigationView bottomNavigation;
+    Fragment fragment_profile, fragment_list_lessons;
+    FragmentCalendar fragment_calendar;
+    Boolean fragFlag1 = false, fragFlag2 = false, fragFlag3 = false;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        Log.d(LOG_TAG, "onCreate");
+        setContentView(R.layout.bottom_navigation);
+        bottomNavigation = findViewById(R.id.bottom_navigation);
+        fragment_list_lessons = new FragmentListLessons();
+        fragment_profile = new FragmentProfile();
+        fragment_calendar = new FragmentCalendar();
+        openFragment(fragment_profile);
+        bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
+            @SuppressLint("NonConstantResourceId")
+            @Override
+            public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.menu_profile:
+                        openFragment(fragment_profile);
+                        return true;
+                    case R.id.menu_list_lesson:
+                        openFragment(fragment_list_lessons);
+                        return true;
+                    case R.id.menu_3:
+                        return true;
+                }
+                return false;
+            }
+        });
     }
 
+    public void openFragment(Fragment fragment) {
+        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
+        transaction.replace(R.id.container, fragment).commit();
+    }
 
     // функция установки меню на layout
     @Override
@@ -42,38 +69,16 @@ public class MainActivity extends AppCompatActivity {
         return true;
     }
 
-
-    protected void onStart() {
-        super.onStart();
-        Log.d(LOG_TAG, "onStart");
-        Toast.makeText(getApplicationContext(), "onStart", Toast.LENGTH_LONG).show();
-    }
-
-    protected void onResume() {
-        super.onResume();
-        Log.d(LOG_TAG, "onResume");
-    }
-
-    protected void onPause() {
-        super.onPause();
-        Log.d(LOG_TAG, "onPause");
-    }
-    protected void onStop() {
-        super.onStop();
-        Log.d(LOG_TAG, "onStop");
-    }
-    protected void onDestroy() {
-        super.onDestroy();
-        Log.d(LOG_TAG, "onDestroy");
-    }
-
-
     // обработка кнопки перехода на новый layout с передачей данных из editView
+    // на данный момент оставлена только для демонстрации, практически не имеет ценности
     public void onClick(View view) {
         EditText editText = findViewById(R.id.editTextPersonName);
         String name = editText.getText().toString();
+        // Serializable данные
+        Student kolyan = new Student(22, "kolya", "Amigo");
         Intent intent = new Intent(MainActivity.this, ListLessons.class);
         intent.putExtra("name", name);
+        intent.putExtra("student", kolyan);
         startActivity(intent);
     }
 
@@ -88,11 +93,49 @@ public class MainActivity extends AppCompatActivity {
 
     // обработка кнопки открытия звонка
     public void onClickTel(View view) {
-        String phoneNo = "89307014255";
-        if(!TextUtils.isEmpty(phoneNo)) {
-            String dial = "tel:" + phoneNo;
+        EditText editTextNumber = findViewById(R.id.editTextNumber);
+        String phoneNumber = editTextNumber.getText().toString();
+        if(!TextUtils.isEmpty(phoneNumber)) {
+            String dial = "tel:" + phoneNumber;
             Intent intent = new Intent(Intent.ACTION_DIAL, Uri.parse(dial));
             startActivity(intent);
         }
     }
+
+    // функция логика работы фрагментов
+    public boolean fragLogic(Button btn, boolean flag, int cont, Fragment current_frag) {
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        if (!flag) {
+            fragmentManager.beginTransaction().add(cont, current_frag).commit();
+            flag = true;
+            btn.setText(R.string.close);
+        } else {
+            fragmentManager.beginTransaction().remove(current_frag).commit();
+            flag = false;
+            btn.setText(R.string.open);
+        }
+        return flag;
+    }
+
+    // обработка кнопок и запуск для каждой функцию логики фрагментов с соответствующими параметрами
+    @SuppressLint("NonConstantResourceId")
+    public void onClickOpen(View v) {
+        Button btnOpen1 = findViewById(R.id.btnOpen1);
+        Button btnOpen2 = findViewById(R.id.btnOpen2);
+        Button btnOpen3 = findViewById(R.id.btnOpen3);
+        switch (v.getId()) {
+            case R.id.btnOpen1:
+                fragFlag1 = fragLogic(btnOpen1, fragFlag1, R.id.frgmCont1, fragment_calendar);
+                break;
+            case R.id.btnOpen2:
+                fragFlag2 = fragLogic(btnOpen2, fragFlag2, R.id.frgmCont2, fragment_calendar);
+                break;
+            case R.id.btnOpen3:
+                fragFlag3 = fragLogic(btnOpen3, fragFlag3, R.id.frgmCont3, fragment_calendar);
+                break;
+            default:
+                break;
+        }
+    }
+
 }
