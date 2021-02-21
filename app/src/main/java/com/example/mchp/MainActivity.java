@@ -8,6 +8,7 @@ import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
+
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
@@ -24,7 +25,7 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 public class MainActivity extends AppCompatActivity {
 
     final String LOG_TAG = "myLogs";
-    BottomNavigationView bottomNavigation;
+
     Fragment fragment_profile, fragment_list_lessons;
     FragmentCalendar fragment_calendar;
     Boolean fragFlag1 = false, fragFlag2 = false, fragFlag3 = false;
@@ -33,11 +34,12 @@ public class MainActivity extends AppCompatActivity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.bottom_navigation);
-        bottomNavigation = findViewById(R.id.bottom_navigation);
+        BottomNavigationView bottomNavigation = findViewById(R.id.bottom_navigation);
         fragment_list_lessons = new FragmentListLessons();
         fragment_profile = new FragmentProfile();
         fragment_calendar = new FragmentCalendar();
         openFragment(fragment_profile);
+
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
@@ -58,8 +60,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void openFragment(Fragment fragment) {
-        FragmentTransaction transaction = getSupportFragmentManager().beginTransaction();
-        transaction.replace(R.id.container, fragment).commit();
+        FragmentManager fragmentManager = getSupportFragmentManager();
+        fragmentManager.beginTransaction().replace(R.id.container, fragment).commit();
     }
 
     // функция установки меню на layout
