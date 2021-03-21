@@ -6,13 +6,13 @@
 
     <fragment
         android:id="@+id/fragment2"
-        android:name="com.example.mchp.FragmentColors"
+        android:name="com.example.mchp.fragments.FragmentColors"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
     <fragment
         android:id="@+id/fragment5"
-        android:name="com.example.mchp.FragmentCalendar"
+        android:name="com.example.mchp.fragments.FragmentCalendar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 </LinearLayout>

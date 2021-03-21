@@ -8,8 +8,11 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.mchp.fragments.FragmentCalendar;
+import com.example.mchp.fragments.FragmentColors;
 
-public class FragmentDynamic extends AppCompatActivity {
+
+public class FragmentExample extends AppCompatActivity {
 
     Fragment frag1;
     Fragment frag2;
@@ -19,16 +22,16 @@ public class FragmentDynamic extends AppCompatActivity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.testing_dinamic_fragment);
+        setContentView(R.layout.layout_fragment_example);
         frag1 = new FragmentCalendar();
         frag2 = new FragmentColors();
     }
 
     // стандартный обработчик для фрагментов с функциями add, remove, replace
     @SuppressLint("NonConstantResourceId")
-    public void onClickButton(View v) {
+    public void onClickButton(View view) {
         FragmentManager fragmentManager = getSupportFragmentManager();
-        switch (v.getId()) {
+        switch (view.getId()) {
             case R.id.btnAdd:
                 fragmentManager.beginTransaction().add(R.id.frgmCont, frag1).commit();
                 current = frag1;

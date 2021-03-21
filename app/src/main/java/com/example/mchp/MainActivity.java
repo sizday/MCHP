@@ -4,7 +4,6 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
-import androidx.fragment.app.FragmentTransaction;
 
 import android.annotation.SuppressLint;
 import android.content.Intent;
@@ -12,13 +11,15 @@ import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
 import android.text.TextUtils;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.mchp.fragments.FragmentCalendar;
+import com.example.mchp.fragments.FragmentListLessons;
+import com.example.mchp.fragments.FragmentProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity {
         fragment_calendar = new FragmentCalendar();
         openFragment(fragment_profile);
 
+        // подсказка запускается CTRL+O
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
@@ -54,7 +56,7 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.menu_3:
                         return true;
                 }
-                return false;
+                return true;
             }
         });
     }
@@ -67,7 +69,7 @@ public class MainActivity extends AppCompatActivity {
     // функция установки меню на layout
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.search_menu, menu);
         return true;
     }
 
@@ -77,10 +79,10 @@ public class MainActivity extends AppCompatActivity {
         EditText editText = findViewById(R.id.editTextPersonName);
         String name = editText.getText().toString();
         // Serializable данные
-        Student kolyan = new Student(22, "kolya", "Amigo");
+        Student vanya = new Student(22, "vanya", "MSHP");
         Intent intent = new Intent(MainActivity.this, ListLessons.class);
         intent.putExtra("name", name);
-        intent.putExtra("student", kolyan);
+        intent.putExtra("student", vanya);
         startActivity(intent);
     }
 

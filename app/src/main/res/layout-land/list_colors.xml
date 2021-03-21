@@ -6,14 +6,14 @@
 
     <fragment
         android:id="@+id/fragment4"
-        android:name="com.example.mchp.FragmentColors"
+        android:name="com.example.mchp.fragments.FragmentColors"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" />
 
     <fragment
         android:id="@+id/fragment6"
-        android:name="com.example.mchp.FragmentCalendar"
+        android:name="com.example.mchp.fragments.FragmentCalendar"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_weight="1" />

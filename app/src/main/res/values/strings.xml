@@ -30,7 +30,6 @@
     <string name="number">Number</string>
     <string name="todo">TODO</string>
 
-
     <string name="navigation_menu_3">Item3</string>
     <string name="navigation_menu_list_lesson">List Lessons</string>
     <string name="navigation_menu_profile">Profile</string>
@@ -38,5 +37,7 @@
     <string name="search">Search</string>
     <string name="more">More</string>
     <string name="content_description_more">Content more</string>
+    <string name="fab_content_desc">test</string>
+
 
 </resources>
