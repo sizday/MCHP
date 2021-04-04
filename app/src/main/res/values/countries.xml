@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="countries">
+        <item>abkhazia;abkhazia;capital</item>
+        <item>afghanistan;Afghanistan;Kabul</item>
+        <item>aland;aland;capital</item>
+        <item>albania;Albania;Tirana</item>
+        <item>algeria;Algeria;Algiers</item>
+        <item>american_samoa;american samoa;capital</item>
+        <item>andorra;Andorra;Andorra la Vella</item>
+        <item>angola;Angola;Luanda</item>
+        <item>anguilla;anguilla;capital</item>
+        <item>antarctica;antarctica;capital</item>
+        <item>antigua_and_barbuda;Antigua and Barbuda;Saint John\'s</item>
+        <item>argentina;Argentina;Buenos Aires</item>
+        <item>armenia;Armenia;Yerevan</item>
+        <item>aruba;aruba;capital</item>
+        <item>australia;Australia;Canberra</item>
+        <item>austria;Austria;Vienna</item>
+        <item>azerbaijan;Azerbaijan;Baku</item>
+        <item>bahamas;bahamas;capital</item>
+        <item>bahrain;Bahrain;Manama</item>
+        <item>bangladesh;Bangladesh;Dhaka</item>
+        <item>barbados;Barbados;Bridgetown</item>
+        <item>basque_country;basque country;capital</item>
+        <item>belarus;Belarus;Minsk</item>
+        <item>belgium;Belgium;Brussels</item>
+        <item>belize;Belize;Belmopan</item>
+        <item>benin;Benin;Porto-Novo</item>
+        <item>bermuda;bermuda;capital</item>
+        <item>bhutan;Bhutan;Thimphu</item>
+        <item>bolivia;Bolivia;La Paz (administrative); Sucre (judicial)</item>
+        <item>bosnia_and_herzegovina;Bosnia and Herzegovina;Sarajevo</item>
+        <item>botswana;Botswana;Gaborone</item>
+        <item>brazil;Brazil;Brasilia</item>
+        <item>british_antarctic_territory;british antarctic territory;capital</item>
+        <item>british_virgin_islands;british virgin islands;capital</item>
+        <item>brunei;Brunei;Bandar Seri Begawan</item>
+        <item>bulgaria;Bulgaria;Sofia</item>
+        <item>burkina_faso;Burkina Faso;Ouagadougou</item>
+        <item>burundi;Burundi;Bujumbura</item>
+        <item>cambodia;Cambodia;Phnom Penh</item>
+        <item>cameroon;Cameroon;Yaounde</item>
+        <item>canada;Canada;Ottawa</item>
+        <item>canary_islands;canary islands;capital</item>
+        <item>cape_verde;Cape Verde;Praia</item>
+        <item>catalonia;catalonia;capital</item>
+        <item>cayman_islands;cayman islands;capital</item>
+        <item>central_african_republic;Central African Republic;Bangui</item>
+        <item>chad;Chad;N\'Djamena</item>
+        <item>chile;Chile;Santiago</item>
+        <item>china;China;Beijing</item>
+        <item>christmas_island;christmas island;capital</item>
+        <item>cocos_keeling_islands;cocos keeling islands;capital</item>
+        <item>colombia;Colombia;Bogota</item>
+        <item>commonwealth;commonwealth;capital</item>
+        <item>comoros;Comoros;Moroni</item>
+        <item>cook_islands;cook islands;capital</item>
+        <item>costa_rica;Costa Rica;San Jose</item>
+        <item>cote_divoire;cote divoire;capital</item>
+        <item>croatia;Croatia;Zagreb</item>
+        <item>cuba;Cuba;Havana</item>
+        <item>curacao;curacao;capital</item>
+        <item>cyprus;Cyprus;Nicosia</item>
+        <item>czech_republic;Czech Republic;Prague</item>
+        <item>democratic_republic_of_the_congo;democratic republic of the congo;capital</item>
+        <item>denmark;Denmark;Copenhagen</item>
+        <item>djibouti;Djibouti;Djibouti</item>
+        <item>dominica;Dominica;Roseau</item>
+        <item>dominican_republic;Dominican Republic;Santo Domingo</item>
+        <item>east_timor;east timor;capital</item>
+        <item>ecuador;Ecuador;Quito</item>
+        <item>egypt;Egypt;Cairo</item>
+        <item>el_salvador;El Salvador;San Salvador</item>
+        <item>england;england;capital</item>
+        <item>equatorial_guinea;Equatorial Guinea;Malabo</item>
+        <item>eritrea;Eritrea;Asmara</item>
+        <item>estonia;Estonia;Tallinn</item>
+        <item>ethiopia;Ethiopia;Addis Ababa</item>
+        <item>european_union;european union;capital</item>
+        <item>falkland_islands;falkland islands;capital</item>
+        <item>faroes;faroes;capital</item>
+        <item>fiji;Fiji;Suva</item>
+        <item>finland;Finland;Helsinki</item>
+        <item>france;France;Paris</item>
+        <item>french_polynesia;french polynesia;capital</item>
+        <item>french_southern_territories;french southern territories;capital</item>
+        <item>gabon;Gabon;Libreville</item>
+        <item>gambia;gambia;capital</item>
+        <item>georgia;Georgia;Tbilisi</item>
+        <item>germany;Germany;Berlin</item>
+        <item>ghana;Ghana;Accra</item>
+        <item>gibraltar;gibraltar;capital</item>
+        <item>gosquared;gosquared;capital</item>
+        <item>greece;Greece;Athens</item>
+        <item>greenland;greenland;capital</item>
+        <item>grenada;Grenada;Saint George\'s</item>
+        <item>guam;guam;capital</item>
+        <item>guatemala;Guatemala;Guatemala City</item>
+        <item>guernsey;guernsey;capital</item>
+        <item>guinea;Guinea;Conakry</item>
+        <item>guinea_bissau;guinea bissau;capital</item>
+        <item>guyana;Guyana;Georgetown</item>
+        <item>haiti;Haiti;Port-au-Prince</item>
+        <item>honduras;Honduras;Tegucigalpa</item>
+        <item>hong_kong;hong kong;capital</item>
+        <item>hungary;Hungary;Budapest</item>
+        <item>iceland;Iceland;Reykjavik</item>
+        <item>india;India;New Delhi</item>
+        <item>indonesia;Indonesia;Jakarta</item>
+        <item>iran;Iran;Tehran</item>
+        <item>iraq;Iraq;Baghdad</item>
+        <item>ireland;Ireland;Dublin</item>
+        <item>isle_of_man;isle of man;capital</item>
+        <item>israel;Israel;Jerusalem</item>
+        <item>italy;Italy;Rome</item>
+        <item>jamaica;Jamaica;Kingston</item>
+        <item>japan;Japan;Tokyo</item>
+        <item>jersey;jersey;capital</item>
+        <item>jordan;Jordan;Amman</item>
+        <item>kazakhstan;Kazakhstan;Astana</item>
+        <item>kenya;Kenya;Nairobi</item>
+        <item>kiribati;Kiribati;Tarawa Atoll</item>
+        <item>kosovo;Kosovo;Pristina</item>
+        <item>kuwait;Kuwait;Kuwait City</item>
+        <item>kyrgyzstan;Kyrgyzstan;Bishkek</item>
+        <item>laos;Laos;Vientiane</item>
+        <item>latvia;Latvia;Riga</item>
+        <item>lebanon;Lebanon;Beirut</item>
+        <item>lesotho;Lesotho;Maseru</item>
+        <item>liberia;Liberia;Monrovia</item>
+        <item>libya;Libya;Tripoli</item>
+        <item>liechtenstein;Liechtenstein;Vaduz</item>
+        <item>lithuania;Lithuania;Vilnius</item>
+        <item>luxembourg;Luxembourg;Luxembourg</item>
+        <item>macau;macau;capital</item>
+        <item>macedonia;Macedonia;Skopje</item>
+        <item>madagascar;Madagascar;Antananarivo</item>
+        <item>malawi;Malawi;Lilongwe</item>
+        <item>malaysia;Malaysia;Kuala Lumpur</item>
+        <item>maldives;Maldives;Male</item>
+        <item>mali;Mali;Bamako</item>
+        <item>malta;Malta;Valletta</item>
+        <item>mars;mars;capital</item>
+        <item>marshall_islands;Marshall Islands;Majuro</item>
+        <item>martinique;martinique;capital</item>
+        <item>mauritania;Mauritania;Nouakchott</item>
+        <item>mauritius;Mauritius;Port Louis</item>
+        <item>mayotte;mayotte;capital</item>
+        <item>mexico;Mexico;Mexico City</item>
+        <item>micronesia;micronesia;capital</item>
+        <item>moldova;Moldova;Chisinau</item>
+        <item>monaco;Monaco;Monaco</item>
+        <item>mongolia;Mongolia;Ulaanbaatar</item>
+        <item>montenegro;Montenegro;Podgorica</item>
+        <item>montserrat;montserrat;capital</item>
+        <item>morocco;Morocco;Rabat</item>
+        <item>mozambique;Mozambique;Maputo</item>
+        <item>myanmar;myanmar;capital</item>
+        <item>nagorno_karabakh;nagorno karabakh;capital</item>
+        <item>namibia;Namibia;Windhoek</item>
+        <item>nato;nato;capital</item>
+        <item>nauru;Nauru;no official capital; Yaren (de facto)</item>
+        <item>nepal;Nepal;Kathmandu</item>
+        <item>netherlands;Netherlands;Amsterdam; The Hague (seat of government)</item>
+        <item>netherlands_antilles;netherlands antilles;capital</item>
+        <item>new_caledonia;new caledonia;capital</item>
+        <item>new_zealand;New Zealand;Wellington</item>
+        <item>nicaragua;Nicaragua;Managua</item>
+        <item>niger;Niger;Niamey</item>
+        <item>nigeria;Nigeria;Abuja</item>
+        <item>niue;niue;capital</item>
+        <item>norfolk_island;norfolk island;capital</item>
+        <item>north_korea;north korea;capital</item>
+        <item>northern_cyprus;northern cyprus;capital</item>
+        <item>northern_mariana_islands;northern mariana islands;capital</item>
+        <item>norway;Norway;Oslo</item>
+        <item>olympics;olympics;capital</item>
+        <item>oman;Oman;Muscat</item>
+        <item>pakistan;Pakistan;Islamabad</item>
+        <item>palau;Palau;Melekeok</item>
+        <item>palestine;palestine;capital</item>
+        <item>panama;Panama;Panama City</item>
+        <item>papua_new_guinea;Papua New Guinea;Port Moresby</item>
+        <item>paraguay;Paraguay;Asuncion</item>
+        <item>peru;Peru;Lima</item>
+        <item>philippines;Philippines;Manila</item>
+        <item>pitcairn_islands;pitcairn islands;capital</item>
+        <item>poland;Poland;Warsaw</item>
+        <item>portugal;Portugal;Lisbon</item>
+        <item>puerto_rico;puerto rico;capital</item>
+        <item>qatar;Qatar;Doha</item>
+        <item>red_cross;red cross;capital</item>
+        <item>republic_of_the_congo;republic of the congo;capital</item>
+        <item>reunion;reunion;capital</item>
+        <item>romania;Romania;Bucharest</item>
+        <item>russia;Russia;Moscow</item>
+        <item>rwanda;Rwanda;Kigali</item>
+        <item>saint_barthelemy;saint barthelemy;capital</item>
+        <item>saint_helena;saint helena;capital</item>
+        <item>saint_kitts_and_nevis;Saint Kitts and Nevis;Basseterre</item>
+        <item>saint_lucia;Saint Lucia;Castries</item>
+        <item>saint_martin;saint martin;capital</item>
+        <item>saint_vincent_and_the_grenadines;Saint Vincent and the Grenadines;Kingstown</item>
+        <item>samoa;Samoa;Apia</item>
+        <item>san_marino;San Marino;San Marino</item>
+        <item>sao_tome_and_principe;Sao Tome and Principe;Sao Tome</item>
+        <item>saudi_arabia;Saudi Arabia;Riyadh</item>
+        <item>scotland;scotland;capital</item>
+        <item>senegal;Senegal;Dakar</item>
+        <item>serbia;Serbia;Belgrade</item>
+        <item>seychelles;Seychelles;Victoria</item>
+        <item>sierra_leone;Sierra Leone;Freetown</item>
+        <item>singapore;Singapore;Singapore</item>
+        <item>sint_maarten;sint maarten;capital</item>
+        <item>slovakia;Slovakia;Bratislava</item>
+        <item>slovenia;Slovenia;Ljubljana</item>
+        <item>solomon_islands;Solomon Islands;Honiara</item>
+        <item>somalia;Somalia;Mogadishu</item>
+        <item>somaliland;somaliland;capital</item>
+        <item>south_africa;South Africa;Pretoria (administrative); Cape Town (legislative); Bloemfontein (judiciary)</item>
+        <item>south_georgia_and_the_south_sandwich_islands;south georgia and the south sandwich islands;capital</item>
+        <item>south_korea;south korea;capital</item>
+        <item>south_ossetia;south ossetia;capital</item>
+        <item>south_sudan;South Sudan;Juba</item>
+        <item>spain;Spain;Madrid</item>
+        <item>sri_lanka;Sri Lanka;Colombo; Sri Jayewardenepura Kotte (legislative)</item>
+        <item>sudan;Sudan;Khartoum</item>
+        <item>suriname;Suriname;Paramaribo</item>
+        <item>swaziland;Swaziland;Mbabane</item>
+        <item>sweden;Sweden;Stockholm</item>
+        <item>switzerland;Switzerland;Bern</item>
+        <item>syria;Syria;Damascus</item>
+        <item>taiwan;Taiwan;Taipei</item>
+        <item>tajikistan;Tajikistan;Dushanbe</item>
+        <item>tanzania;Tanzania;Dar es Salaam; Dodoma (legislative)</item>
+        <item>thailand;Thailand;Bangkok</item>
+        <item>togo;Togo;Lome</item>
+        <item>tokelau;tokelau;capital</item>
+        <item>tonga;Tonga;Nuku\'alofa</item>
+        <item>trinidad_and_tobago;Trinidad and Tobago;Port-of-Spain</item>
+        <item>tunisia;Tunisia;Tunis</item>
+        <item>turkey;Turkey;Ankara</item>
+        <item>turkmenistan;Turkmenistan;Ashgabat</item>
+        <item>turks_and_caicos_islands;turks and caicos islands;capital</item>
+        <item>tuvalu;Tuvalu;Funafuti (Atoll)</item>
+        <item>uganda;Uganda;Kampala</item>
+        <item>ukraine;Ukraine;Kyiv</item>
+        <item>united_arab_emirates;United Arab Emirates;Abu Dhabi</item>
+        <item>united_kingdom;United Kingdom;London</item>
+        <item>united_nations;united nations;capital</item>
+        <item>united_states;united states;capital</item>
+        <item>unknown;unknown;capital</item>
+        <item>uruguay;Uruguay;Montevideo</item>
+        <item>us_virgin_islands;us virgin islands;capital</item>
+        <item>uzbekistan;Uzbekistan;Tashkent</item>
+        <item>vanuatu;Vanuatu;Port-Vila</item>
+        <item>vatican_city;vatican city;capital</item>
+        <item>venezuela;Venezuela;Caracas</item>
+        <item>vietnam;Vietnam;Hanoi</item>
+        <item>wales;wales;capital</item>
+        <item>wallis_and_futuna;wallis and futuna;capital</item>
+        <item>western_sahara;western sahara;capital</item>
+        <item>yemen;Yemen;Sanaa</item>
+        <item>zambia;Zambia;Lusaka</item>
+        <item>zimbabwe;Zimbabwe;Harare</item>
+    </string-array>
+</resources>

@@ -10,13 +10,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.RAINBOW"
         tools:ignore="AllowBackup">
-        <activity android:name=".BottomAppBarExample"/>
+        <activity android:name=".MainActivity" />
+        <activity android:name=".BottomAppBarExample" />
         <activity android:name=".ListLessons" />
-        <activity android:name=".MainActivity"
+        <activity
+            android:name=".MainActivity2"
             android:icon="@drawable/ic_search_24dp">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>

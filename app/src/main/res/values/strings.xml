@@ -38,6 +38,10 @@
     <string name="more">More</string>
     <string name="content_description_more">Content more</string>
     <string name="fab_content_desc">test</string>
-
+    <string name="countryAdapter">Country Adapter</string>
+    <string name="countryName">Enter country name</string>
+    <string name="addCountry">Add country</string>
+    <string name="deleteCountry">Delete country</string>
+    <string name="countryInfo">Country Info</string>
 
 </resources>
