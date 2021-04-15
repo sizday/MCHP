@@ -4,15 +4,18 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.annotation.SuppressLint;
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
+import android.widget.Toast;
+
 import java.util.ArrayList;
 
-public class MainActivity2 extends AppCompatActivity {
+public class RecycleViewExample extends AppCompatActivity {
 
-    ArrayList<State> states = new ArrayList<State>();
+    ArrayList<Country> countries = new ArrayList<Country>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,9 +25,10 @@ public class MainActivity2 extends AppCompatActivity {
     }
 
     private String getCountryArray(String searchCountry) {
-        String[] countries = getResources().getStringArray(R.array.countries);
+        String[] allCountry = getResources().getStringArray(R.array.countries);
         String needCountry = "empty";
-        for (String country : countries) {
+
+        for (String country : allCountry) {
             String[] splited = country.split(";");
             if (searchCountry.equals(splited[1]))
                 needCountry = country;
@@ -32,10 +36,16 @@ public class MainActivity2 extends AppCompatActivity {
         return needCountry;
     }
 
-
     private void newStateRecycle() {
         RecyclerView recyclerView = findViewById(R.id.recycleViewCountry);
-        StateAdapter adapter = new StateAdapter(getLayoutInflater(), states);
+        CountryAdapter.OnCountryClickListener countryClickListener = new CountryAdapter.OnCountryClickListener() {
+            @Override
+            public void onCountryClick(Country country, int position) {
+                countries.get(position).setChecked(!country.isChecked());
+                newStateRecycle();
+            }
+        };
+        CountryAdapter adapter = new CountryAdapter(getLayoutInflater(), countries, countryClickListener);
         recyclerView.setAdapter(adapter);
     }
 
@@ -54,13 +64,13 @@ public class MainActivity2 extends AppCompatActivity {
                 case R.id.buttonAddCountry:
                     textView.setText("New country is " + countryInfo[1]);
                     int resID = getResources().getIdentifier(countryInfo[0], "drawable", getPackageName());
-                    states.add(new State(countryInfo[1], countryInfo[2], resID));
+                    countries.add(new Country(countryInfo[1], countryInfo[2], resID, false));
                     break;
                 case R.id.buttonDeleteCountry:
                     textView.setText("Deleted country is " + countryInfo[1]);
-                    for (State state : states) {
+                    for (Country state : countries) {
                         if (state.getCountry().equals(countryInfo[1])) {
-                            states.remove(state);
+                            countries.remove(state);
                             break;
                         }
                     }

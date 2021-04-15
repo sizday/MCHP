@@ -1,14 +1,16 @@
 package com.example.mchp;
 
-public class State {
+public class Country {
     private String country;
     private String capital;
     private int flag;
+    private boolean checked;
 
-    public State(String country, String capital, int flag) {
+    public Country(String country, String capital, int flag, boolean checked) {
         this.country=country;
         this.capital=capital;
         this.flag=flag;
+        this.checked = checked;
     }
 
     public String getCountry() {
@@ -33,5 +35,13 @@ public class State {
 
     public void setCapital(String capital) {
         this.capital = capital;
+    }
+
+    public void setChecked(boolean checked) {
+        this.checked = checked;
+    }
+
+    public boolean isChecked() {
+        return checked;
     }
 }

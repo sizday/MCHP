@@ -2,6 +2,7 @@ package com.example.mchp
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.Button
 import android.widget.TextView
 import com.example.mchp.databinding.ActivityMainBinding
 import com.google.android.material.bottomappbar.BottomAppBar
@@ -27,7 +28,6 @@ class BottomAppBarExample : AppCompatActivity() {
                 else -> false
             }
         }
-
         setContentView(binding.root)
     }
 }

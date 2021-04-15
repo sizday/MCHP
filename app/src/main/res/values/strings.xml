@@ -43,5 +43,8 @@
     <string name="addCountry">Add country</string>
     <string name="deleteCountry">Delete country</string>
     <string name="countryInfo">Country Info</string>
+    <string name="capitalName">capital Name</string>
+    <string name="country">Country</string>
+    <string name="capital">Capital</string>
 
 </resources>
