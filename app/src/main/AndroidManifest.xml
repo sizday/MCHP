@@ -3,24 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.example.mchp">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:icon="@mipmap/rainbow"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/rainbow_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RAINBOW"
+        android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-
+        <activity android:name=".WebViewExample">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".MainActivity" />
         <activity android:name=".BottomAppBarExample" />
         <activity android:name=".ListLessons" />
-        <activity android:name=".RecycleViewExample"
-            android:icon="@drawable/ic_search_24dp">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name=".RecycleViewExample">
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
     </application>
 
