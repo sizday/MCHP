@@ -1,4 +1,4 @@
-package com.example.mchp;
+package com.example.mchp.material_design;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
@@ -17,13 +17,14 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 
+import com.example.mchp.R;
 import com.example.mchp.fragments.FragmentCalendar;
 import com.example.mchp.fragments.FragmentListLessons;
 import com.example.mchp.fragments.FragmentProfile;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 
-public class MainActivity extends AppCompatActivity {
+public class BottomNavigationExample extends AppCompatActivity {
 
     final String LOG_TAG = "myLogs";
 
@@ -41,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
         fragment_calendar = new FragmentCalendar();
         openFragment(fragment_profile);
 
-        // подсказка запускается CTRL+O
+        // подсказка запускается с помощью CTRL+O
         bottomNavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @SuppressLint("NonConstantResourceId")
             @Override
@@ -78,11 +79,8 @@ public class MainActivity extends AppCompatActivity {
     public void onClick(View view) {
         EditText editText = findViewById(R.id.editTextPersonName);
         String name = editText.getText().toString();
-        // Serializable данные
-        Student vanya = new Student(22, "vanya", "MSHP");
-        Intent intent = new Intent(MainActivity.this, ListLessons.class);
+        Intent intent = new Intent(BottomNavigationExample.this, ListLessons.class);
         intent.putExtra("name", name);
-        intent.putExtra("student", vanya);
         startActivity(intent);
     }
 

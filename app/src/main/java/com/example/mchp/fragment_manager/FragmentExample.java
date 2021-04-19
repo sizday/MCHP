@@ -1,4 +1,4 @@
-package com.example.mchp;
+package com.example.mchp.fragment_manager;
 
 import android.annotation.SuppressLint;
 import android.os.Bundle;
@@ -8,6 +8,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
+import com.example.mchp.R;
 import com.example.mchp.fragments.FragmentCalendar;
 import com.example.mchp.fragments.FragmentColors;
 

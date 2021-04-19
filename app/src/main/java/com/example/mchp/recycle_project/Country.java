@@ -1,4 +1,4 @@
-package com.example.mchp;
+package com.example.mchp.recycle_project;
 
 public class Country {
     private String country;

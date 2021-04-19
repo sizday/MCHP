@@ -13,17 +13,19 @@
         android:theme="@style/Theme.RAINBOW"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-        <activity android:name=".WebViewExample">
+        <activity android:name=".recycle_base.RecycleViewBaseExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
+
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".MainActivity" />
-        <activity android:name=".BottomAppBarExample" />
-        <activity android:name=".ListLessons" />
-        <activity android:name=".RecycleViewExample">
-
+        <activity android:name=".web_view.WebViewExample">
+        </activity>
+        <activity android:name=".material_design.BottomNavigationExample" />
+        <activity android:name=".material_design.BottomAppBarExample" />
+        <activity android:name=".material_design.ListLessons" />
+        <activity android:name=".recycle_project.RecycleViewExample">
         </activity>
     </application>
 
