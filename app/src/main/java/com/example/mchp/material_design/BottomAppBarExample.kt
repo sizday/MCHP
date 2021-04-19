@@ -2,19 +2,18 @@ package com.example.mchp.material_design
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.widget.TextView
 import com.example.mchp.R
-import com.example.mchp.databinding.ActivityMainBinding
+import com.google.android.material.bottomappbar.BottomAppBar
 
 
 class BottomAppBarExample : AppCompatActivity() {
 
-    private lateinit var binding: ActivityMainBinding
-
-    // как использовать binding (помогает избежать многократного повторения findViewByID)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityMainBinding.inflate(layoutInflater)
-        binding.bottomAppBar.setOnMenuItemClickListener { menuItem ->
+        setContentView(R.layout.bottom_app_bar)
+        val bottomAppBar = findViewById<BottomAppBar>(R.id.bottomAppBar)
+        bottomAppBar.setOnMenuItemClickListener { menuItem ->
             when (menuItem.itemId) {
                 R.id.search -> {
                     // Handle search icon press
@@ -27,6 +26,5 @@ class BottomAppBarExample : AppCompatActivity() {
                 else -> false
             }
         }
-        setContentView(binding.root)
     }
 }
