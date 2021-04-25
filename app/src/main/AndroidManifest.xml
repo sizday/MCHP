@@ -11,22 +11,21 @@
         android:roundIcon="@mipmap/rainbow_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.RAINBOW"
+        android:name=".api.App"
         android:usesCleartextTraffic="true"
         tools:ignore="AllowBackup">
-        <activity android:name=".recycle_base.RecycleViewBaseExample">
+        <activity android:name=".api.AppExample">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".web_view.WebViewExample">
-        </activity>
+        <activity android:name=".recycle_base.RecycleViewBaseExample"></activity>
+        <activity android:name=".web_view.WebViewExample" />
         <activity android:name=".material_design.BottomNavigationExample" />
         <activity android:name=".material_design.BottomAppBarExample" />
         <activity android:name=".material_design.ListLessons" />
-        <activity android:name=".recycle_project.RecycleViewExample">
-        </activity>
+        <activity android:name=".recycle_project.RecycleViewExample" />
     </application>
 
 </manifest>

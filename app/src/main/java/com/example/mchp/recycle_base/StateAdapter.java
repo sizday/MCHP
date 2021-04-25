@@ -4,6 +4,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
+import android.widget.RadioButton;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -35,6 +36,7 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.ViewHolder> 
         holder.flagView.setImageResource(state.getFlag());
         holder.countryView.setText(state.getState());
         holder.capitalView.setText(state.getCapital());
+        holder.radiobutton.setChecked(state.isRadio());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -59,12 +61,14 @@ public class StateAdapter extends RecyclerView.Adapter<StateAdapter.ViewHolder> 
         final ImageView flagView;
         final TextView countryView;
         final TextView capitalView;
+        final RadioButton radiobutton;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             flagView = itemView.findViewById(R.id.imageFlag);
             countryView = itemView.findViewById(R.id.textCountry);
             capitalView = itemView.findViewById(R.id.textCapital);
+            radiobutton = itemView.findViewById(R.id.radioButton);
         }
     }
 }

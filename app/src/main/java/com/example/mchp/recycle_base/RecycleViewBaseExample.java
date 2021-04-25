@@ -17,9 +17,9 @@ public class RecycleViewBaseExample extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.recycleview_base);
-        states.add(new State("Russia", "Moscow", R.drawable.russia));
-        states.add(new State("Ukraine", "Kiev", R.drawable.ukraine));
-        states.add(new State("Belarus", "Minsk", R.drawable.belarus));
+        states.add(new State("Russia", "Moscow", R.drawable.russia, true));
+        states.add(new State("Ukraine", "Kiev", R.drawable.ukraine, false));
+        states.add(new State("Belarus", "Minsk", R.drawable.belarus, true));
         updateData();
     }
 

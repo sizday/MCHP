@@ -4,11 +4,13 @@ public class State {
     private String country;
     private String capital;
     private int flag;
+    private boolean radio;
 
-    public State(String country, String capital, int flag) {
+    public State(String country, String capital, int flag, boolean rb) {
         this.country=country;
         this.capital=capital;
         this.flag=flag;
+        this.radio = rb;
     }
 
     public String getState() {
@@ -23,6 +25,10 @@ public class State {
         return flag;
     }
 
+    public boolean isRadio() {
+        return radio;
+    }
+
     public void setFlag(int flag) {
         this.flag = flag;
     }
@@ -35,4 +41,5 @@ public class State {
         this.capital = capital;
     }
 
+    public void setRadio(boolean rb) {this.radio=rb;}
 }
