@@ -49,7 +49,7 @@ class ListLessons : AppCompatActivity() {
 
     // обработка кнопок и запуск для каждой функцию логики фрагментов с соответствующими параметрами
     @SuppressLint("NonConstantResourceId")
-    fun onClickButton(v: View) {
+    fun onClickOpen(v: View) {
         val btnOpen1 = findViewById<Button>(R.id.btnOpen1)
         val btnOpen2 = findViewById<Button>(R.id.btnOpen2)
         val btnOpen3 = findViewById<Button>(R.id.btnOpen3)

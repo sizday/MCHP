@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "913314478566",
+    "project_id": "mshp-45490",
+    "storage_bucket": "mshp-45490.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:913314478566:android:ee8285ae9524477002be27",
+        "android_client_info": {
+          "package_name": "com.example.mchp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "913314478566-le7nq2rpu8q3vvsdtrab017nd7eto3pb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiFz5OCxKcF2G-zjdOgeJ2WRnLqC2ctkE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "913314478566-le7nq2rpu8q3vvsdtrab017nd7eto3pb.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,5 +1,6 @@
 package com.example.mchp.web_view;
 
+import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.annotation.SuppressLint;
@@ -9,6 +10,7 @@ import android.webkit.WebView;
 import com.example.mchp.R;
 
 public class WebViewExample extends AppCompatActivity {
+
 
     @SuppressLint("SetJavaScriptEnabled")
     @Override
